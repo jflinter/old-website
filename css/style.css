@@ -233,12 +233,12 @@ td { vertical-align: top; }
   font-family: Oswald, Helvetica, Arial, sans-serif;
 }
 .info-name {
-  font-size:24px;
-  line-height:24px;
+  font-size:30px;
+  line-height:30px;
 }
 .info-tagline {
-  font-size:18px;
-  line-height:18px;
+  font-size:20px;
+  line-height:20px;
 }
 
 .social i {
