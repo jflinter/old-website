@@ -215,12 +215,51 @@ td { vertical-align: top; }
 
 
 /* ==|== primary styles =====================================================
-   Author:
+   Author: Jack Flintermann
    ========================================================================== */
 
+@font-face {
+   font-family: Oswald;
+   src: url(../oswald/Oswald-Regular.otf);
+   font-weight:400;
+}
 
+.main {
+  margin-top:20px;
+  margin-left:20px;
+}
+.info-main {
+  margin-left:10px;
+  font-family: Oswald, Helvetica, Arial, sans-serif;
+}
+.info-name {
+  font-size:24px;
+  line-height:24px;
+}
+.info-tagline {
+  font-size:18px;
+  line-height:18px;
+}
 
+.social i {
+  margin-top:5px;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
+  vertical-align: text-top;
+}
+.twitter-icon {
+  background-image:url("../img/glyphicons_392_twitter.png");
+}
 
+.github-icon {
+  background-image:url("../img/glyphicons_381_github.png");
+}
+
+.linkedin-icon {
+  background-image:url("../img/glyphicons_377_linked_in.png");
+}
 
 
 
