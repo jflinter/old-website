@@ -4,20 +4,27 @@
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
 <!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
 <!-- Consider adding a manifest.appcache: h5bp.com/d/Offline -->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js wf-loading" lang="en"> <!--<![endif]-->
 <head>
   <meta charset="utf-8">
-<style>
-	@font-face {
-	   font-family: Oswald;
-	   src: url(../oswald/Oswald-Regular.otf);
-	   font-weight:400;
-	}
-</style>
 
   <!-- Use the .htaccess and remove these lines to avoid edge case issues.
        More info: h5bp.com/i/378 -->
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<script type="text/javascript">
+	WebFontConfig = {
+	google: { families: [ 'Podkova', 'Oswald' ] }
+	};
+
+	(function() {
+	var wf = document.createElement('script');
+	wf.src = ('https:' == document.location.protocol ? 'https' : 'http') + '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+	wf.type = 'text/javascript';
+	wf.async = 'true';
+	var s = document.getElementsByTagName('script')[0];
+	s.parentNode.insertBefore(wf, s);
+	})();
+	</script>
 
   <title>{{ page.title }}</title>
   <meta name="description" content="">
@@ -27,8 +34,8 @@
 
   <!-- Place favicon.ico and apple-touch-icon.png in the root directory: mathiasbynens.be/notes/touch-icons -->
 
-  <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
 
   <!-- More ideas for your <head> here: h5bp.com/d/head-Tips -->
 
@@ -45,18 +52,20 @@
 
   </header>
   <div class="main">
-	<div class="row">
-		<div class="span1">
-			<img id="main-photo" src="http://www.gravatar.com/avatar/d7822bb76e635948ac79ce72004e4274.png" alt="Jack Flintermann" />
-		</div>
-		<div class="span4">
-			<div class="info-main">
-				<div class="info-name">JACK FLINTERMANN</div>
-				<div class="info-tagline">iOS Developer at eHarmony</div>
-				<div class="social">
-					<a href="https://twitter.com/jflinter" target="_blank"><i class='twitter-icon'></i></a>
-					<a href="http://github.com/jflinter" target="_blank"><i class='github-icon'></i></a>
-					<a href="http://www.linkedin.com/pub/jack-flintermann/16/4aa/756" target="_blank"><i class='linkedin-icon'></i></a>
+	<div class="info">
+		<div class="row">
+			<div class="span1">
+				<img id="main-photo" src="http://www.gravatar.com/avatar/d7822bb76e635948ac79ce72004e4274.png" alt="Jack Flintermann" />
+			</div>
+			<div class="span4">
+				<div class="info-main">
+					<h1>JACK FLINTERMANN</h1>
+					<h2 class="info-tagline">iOS Developer at eHarmony</h2>
+					<div class="social">
+						<a href="https://twitter.com/jflinter" target="_blank"><i class='twitter-icon'></i></a>
+						<a href="http://github.com/jflinter" target="_blank"><i class='github-icon'></i></a>
+						<a href="http://www.linkedin.com/pub/jack-flintermann/16/4aa/756" target="_blank"><i class='linkedin-icon'></i></a>
+					</div>
 				</div>
 			</div>
 		</div>
