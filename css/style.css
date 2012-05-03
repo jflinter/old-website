@@ -381,9 +381,14 @@ left: 20px;
 font-family: Oswald, Helvetica, Arial, sans-serif;
 }
 
+.info {
+  width:380px;
+  overflow-x:hidden;
+}
 .info-main {
-  width:220px;
+  
 margin-left: 10px;
+
 }
 
 .info-main h1 {
