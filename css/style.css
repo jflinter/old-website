@@ -376,14 +376,13 @@ cursor: pointer;
 }
 .main {
 position: absolute;
-top: 20px;
-left: 20px;
+top: 15px;
+left: 15px;
 font-family: Oswald, Helvetica, Arial, sans-serif;
 }
 
 .info {
   width:380px;
-  overflow-x:hidden;
 }
 .info-main {
   
