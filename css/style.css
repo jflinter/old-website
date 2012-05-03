@@ -67,7 +67,7 @@ color: #fff;
 text-shadow: none;
 }
 ::selection {
-background: #fe57a1;
+background: #08C;
 color: #fff;
 text-shadow: none;
 }
@@ -382,6 +382,7 @@ font-family: Oswald, Helvetica, Arial, sans-serif;
 }
 
 .info-main {
+  width:220px;
 margin-left: 10px;
 }
 
