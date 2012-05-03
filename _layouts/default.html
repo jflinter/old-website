@@ -7,6 +7,13 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
   <meta charset="utf-8">
+<style>
+	@font-face {
+	   font-family: Oswald;
+	   src: url(../oswald/Oswald-Regular.otf);
+	   font-weight:400;
+	}
+</style>
 
   <!-- Use the .htaccess and remove these lines to avoid edge case issues.
        More info: h5bp.com/i/378 -->
@@ -40,10 +47,9 @@
   <div class="main">
 	<div class="row">
 		<div class="span1">
-			<div id="main-image"></div>
-			<img src="http://www.gravatar.com/avatar/d7822bb76e635948ac79ce72004e4274.png" alt="Jack Flintermann" />
+			<img id="main-photo" src="http://www.gravatar.com/avatar/d7822bb76e635948ac79ce72004e4274.png" alt="Jack Flintermann" />
 		</div>
-		<div class="span5">
+		<div class="span4">
 			<div class="info-main">
 				<div class="info-name">JACK FLINTERMANN</div>
 				<div class="info-tagline">iOS Developer at eHarmony</div>
@@ -55,7 +61,9 @@
 			</div>
 		</div>
 	</div>
+	<div class="content">
 	{{ content }}
+	</div>
   </div>
   <footer>
 

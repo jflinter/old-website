@@ -218,15 +218,20 @@ td { vertical-align: top; }
    Author: Jack Flintermann
    ========================================================================== */
 
-@font-face {
-   font-family: Oswald;
-   src: url(../oswald/Oswald-Regular.otf);
-   font-weight:400;
+body {
+  padding-top:120px;
 }
 
+#main-photo {
+  cursor:pointer;
+}
 .main {
-  margin-top:20px;
-  margin-left:20px;
+  position:fixed;
+  top:20px;
+  left:20px;
+}
+.content {
+  position:absolut;
 }
 .info-main {
   margin-left:10px;
