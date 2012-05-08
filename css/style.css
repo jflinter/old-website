@@ -360,11 +360,6 @@ padding: 0.2em 0;
 /* ==|== primary styles =====================================================
    Author: Jack Flintermann
    ========================================================================== */
-   
-
-body {
-padding-top: 120px;
-}
 
 p {
   font-family:Podkova, serif;
@@ -372,22 +367,20 @@ p {
 }
 
 #main-photo {
-cursor: pointer;
-}
-.main {
-position: absolute;
-top: 15px;
-left: 15px;
-font-family: Oswald, Helvetica, Arial, sans-serif;
+  float:left;
+  padding-right:10px;
 }
 
+body {
+  padding-top: 20px;
+  font-family: Oswald, Helvetica, Arial, sans-serif;
+}
 .info {
-  width:380px;
+  max-width: 310px;
 }
-.info-main {
-  
-margin-left: 10px;
 
+.info-main {
+  margin-left: 10px;
 }
 
 .info-main h1 {
@@ -425,24 +418,22 @@ background-image: url("../img/glyphicons_381_github.png");
 background-image: url("../img/glyphicons_377_linked_in.png");
 }
 
-.content {
-  padding-top:30px;
-}
-
-.wf-loading i,
 .wf-loading hr,
 .wf-loading .content,
 .wf-loading h1, 
 .wf-loading h2, 
 .wf-loading h3, 
 .wf-loading p, 
-.wf-loading li {
+.wf-loading li,
+.wf-loading img {
   font-family:sans-serif;
   font-size:10px;
   opacity:0;
 }
 
- h1, h2, h3, p, li {
+
+
+ h1, h2, h3, p, li, img {
    opacity: 1;
    -webkit-transition: opacity 0.24s ease-in-out;
           -moz-transition: opacity 0.24s ease-in-out;
@@ -450,6 +441,11 @@ background-image: url("../img/glyphicons_377_linked_in.png");
 }
 
 
+.wf-loading i {
+  font-family:sans-serif;
+  font-size:10px;
+  background:rgba(245,245,245,1);
+}
 
 
 

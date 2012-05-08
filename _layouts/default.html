@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
@@ -35,6 +35,7 @@
   <!-- Place favicon.ico and apple-touch-icon.png in the root directory: mathiasbynens.be/notes/touch-icons -->
 
 <link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/bootstrap-responsive.min.css">
   <link rel="stylesheet" href="css/style.css">
 
   <!-- More ideas for your <head> here: h5bp.com/d/head-Tips -->
@@ -48,32 +49,28 @@
   <!-- Prompt IE 6 users to install Chrome Frame. Remove this if you support IE 6.
        chromium.org/developers/how-tos/chrome-frame-getting-started -->
   <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
-  <header>
 
-  </header>
-  <div class="main">
-	<div class="info">
+	<div class="container">
 		<div class="row">
-			<div class="span1">
-				<img id="main-photo" src="http://www.gravatar.com/avatar/d7822bb76e635948ac79ce72004e4274.png" alt="Jack Flintermann" />
-			</div>
-			<div class="span4">
-				<div class="info-main">
-					<h1>JACK FLINTERMANN</h1>
-					<h2 class="info-tagline">iOS Developer at eHarmony</h2>
-					<div class="social">
-						<a href="https://twitter.com/jflinter" target="_blank"><i class='twitter-icon'></i></a>
-						<a href="http://github.com/jflinter" target="_blank"><i class='github-icon'></i></a>
-						<a href="http://www.linkedin.com/pub/jack-flintermann/16/4aa/756" target="_blank"><i class='linkedin-icon'></i></a>
+			<div class="span6 offset2">
+				<div class="info well">
+					<img id="main-photo" src="http://www.gravatar.com/avatar/d7822bb76e635948ac79ce72004e4274.png" alt="Jack Flintermann" />
+					<div class="info-main">
+						<h1>JACK FLINTERMANN</h1>
+						<h2 class="info-tagline">iOS Developer at eHarmony</h2>
+						<div class="social">
+							<a href="https://twitter.com/jflinter" target="_blank"><i class='twitter-icon'></i></a>
+							<a href="http://github.com/jflinter" target="_blank"><i class='github-icon'></i></a>
+							<a href="http://www.linkedin.com/pub/jack-flintermann/16/4aa/756" target="_blank"><i class='linkedin-icon'></i></a>
+						</div>
 					</div>
+				</div>
+				<div class="content">
+					{{content}}
 				</div>
 			</div>
 		</div>
 	</div>
-	<div class="content">
-	{{ content }}
-	</div>
-  </div>
   <footer>
 
   </footer>

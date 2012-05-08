@@ -1,8 +1,14 @@
 /* Author: Jack Flintermann
 */
 var title_index = 0;
-var titles = ['has a giant forehead', 'iOS Developer at eHarmony'];
-$("#main-photo").on("click", function() {
-  $(".info-tagline").text(titles[title_index]);
-  title_index = (title_index + 1) % titles.length;
+var titles = ['iOS Developer at eHarmony', 'Brown University \'10 MS \'11', 'has a giant forehead', ];
+
+$("tbody td").on("mouseenter", function() {
+  var row = $(this).parent().parent().children().index($(this).parent());
+  $(".info-tagline").text(titles[(row + 1) % titles.length]);
+});
+
+$("tbody td").on("mouseleave", function() {
+  var row = $(this).parent().parent().children().index($(this).parent());
+  $(".info-tagline").text(titles[0]);
 });
